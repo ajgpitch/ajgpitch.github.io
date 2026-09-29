@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Alexander Pitchford Github hosted material"
+  
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: tmq_project.qmd
+        text: Theo Meets QuTiP Project
+      - href: tmq_blog.qmd
+        text: Theo Meets QuTiP Blog
+    right:
+      - text: Alexander Pitchford
+      - icon: github
+        href: https://github.com/ajgpitch
+      - icon: linkedin  
+        href: https://www.linkedin.com/in/alexander-pitchford-47237a35/
+
+format:
+  html:
+    theme: [cosmo]
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    html-math-method: katex
+    page-layout: article
+    margin-left: 2em
+    margin-right: 2em
+
+execute:
+  freeze: auto
