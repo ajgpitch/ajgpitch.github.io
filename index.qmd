@@ -11,7 +11,7 @@ I have started this so I can share my experiences of working on projects.
 Specifically, I am working a project with [FirstPrinciples](https://firstpriciples.com/) to assess how their AI tools can help quantum physics researchers,
 with a particular focus on those using QuTiP.
 
-I am maintainer of the qutip project [QuTiP](https://qutip.org/) (Quantum Toolbox in Python).
+I am maintainer of the [QuTiP](https://qutip.org/) (Quantum Toolbox in Python) project.
 
 I do some other things as well, but for now I'll just be posting about Theo Meets QuTiP.
 

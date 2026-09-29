@@ -9,7 +9,9 @@ I am evaluating how the Theo Platform can help researchers advance their work mo
 
 # Disclaimer
 
-The work is funded by FirstPrinciples through my employer, [Aberystwyth University](http://www.aber.ac.uk). I am maintainer of the [QuTiP](https://qutip.org/) project and my objective is to help our userbase continue to do great science, hopefully greater and faster than ever with help from these new tools.
+The work is funded by FirstPrinciples through my employer, [Aberystwyth University](http://www.aber.ac.uk). 
+I am a maintainer of the [QuTiP](https://qutip.org/) project and my objective is to help our userbase continue to do great science, 
+hopefully greater and faster than ever with help from these new tools.
 
 # Notes
 
