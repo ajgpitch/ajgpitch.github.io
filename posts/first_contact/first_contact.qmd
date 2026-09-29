@@ -1,4 +1,10 @@
-
+---
+title: "First contact: Onboarding and Session \#1"
+author: "Alexander Pitchford"
+date: "2026-09-25"
+page-layout: article
+categories: [FirstPrinciples, QuTiP, Theo Platform, Theo Collaborator]
+---
 
 # First contact (2^nd^ September 2026)
 
@@ -22,7 +28,7 @@ Specifically, I asked Theo to plot the fidelity the current state against |+\> o
 
 So, we ran the code (server side) and found qutip not available in the environment, so a plot was produced from the NumPy exact solution code (see below). This seemed to be as expected, with the fidelity periodically reaching maximum (1). I then downloaded the code to my machine and ran it there. Initially there was some small error: some obscure method of finding the fidelity, which may have worked in old qutip versions. After a few back and forths, and an interesting discussion on whether the overlap value should be squared or not, we got to a working version and this did indeed produce the same output. I wonder whether Theo would have been able to fix this bug itself if it could have run the qutip version of the code itself. 
 
-![][image1]
+![][Example1_SigmaY_sigmaZ_fixedT]
 
 This example has no traps. Next we’re going to move on to a 1-d example that does have traps – in fact I’m going to ask Theo to suggest a way to modify the Hamiltonian so that it does. Then on to some 2-d examples. This was as far as Will got, extending to many dimensions is when it becomes interesting, but actual interesting science problems have a great many.
 
