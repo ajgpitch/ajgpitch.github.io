@@ -34,23 +34,26 @@ So, we ran the code (server side) and found qutip not available in the environme
 
 ![No traps, repeated full fidelity](SigmaY_Qubit_Fidelity_vs_Time.png)
 
-This example has no traps. Next we’re going to move on to a 1-d example that does have traps – in fact I’m going to ask Theo to suggest a way to modify the Hamiltonian so that it does. Then on to some 2-d examples. This was as far as Will got, extending to many dimensions is when it becomes interesting, but actual interesting science problems have a great many.
+This example has no traps. Next we’re going to move on to a 1-d example that does have traps – in fact I’m going to ask Theo to suggest a way to modify the Hamiltonian so that it does. Then on to some 2-d examples. This was as far as Will got, extending to many dimensions is when it becomes interesting, as actual interesting science problems have a great many.
 
-I suggested that we could add a drift term in $\sigma_z$ and that this might result in suboptimal local maxima (traps). It extended the code and after some iterations we came up with this plot (this is actually the plot made later after we worked on the next two examples).
-
+I suggested that we could add a drift term in $\sigma_z$ and that this might result in suboptimal local maxima (traps). 
+It extended the code and after some iterations we came up with the following plot. 
+.
 ![Local traps, asymptotically approaching full fidelity](Example1_SigmaY_sigmaZ_fixedT.png)
 
-Here we can clearly see that with the drift term applied (w=1, with w being the coefficient of $\sigma_z$) that the target state is never achieved (J=1) but with increasing $\sigma_y$ amplitude u we do approach it for some fixed evolution time, whereas with no drift the target is achieved periodically in u.
+Here we can clearly see that with the drift term applied $w=1$, that the target state is never achieved ($J=1$) but with increasing $\sigma_y$ amplitude $u$ we do approach it for some fixed evolution time, whereas with no drift the target is achieved periodically in $u$.
 
 I checked with Will’s report and found we actually focussed on driving $\sigma_x$ with the $\sigma_z$ drift, so I asked Theo to construct the same example and we got this plot, which matches exactly what Will produced.
 
 ![One full fidelity, then local traps](Example2_SigmaX_exact_hit.png)
 
-This example is interesting because it has an exact hit for some v, the coefficient of $\sigma_x$, but then local traps thereafter.
+This example is interesting because it has an exact hit for some $v$, the coefficient of $\sigma_x$, but then local traps thereafter.
 
 We note that these plots are fairly tidy, but not quite publication quality, as the annotations and legends are oddly placed. This seems at odds with experiences of others with frontier AI models. At this stage, the beta version had only GPT 5.5 (although the default in 5.4 as it’s faster), GLM and Kimi. In recent days, Claude Sonnet and Opus have been added, they may have done a little better. I experimented (far from exhaustively) for some time with the other three and found GLM to be the most reliable at Python coding. It is clear that FP have plans for making the frontier models available in the Platform, but it is also well known that these cost a lot more to run, so somehow this will need to be paid for, but we would expect them to be the release version. The available models are doing amazing work and my focus is to trial this integrated environment. These plots are clearly good enough for our purpose here and they were produced with very little effort from me. I have not edited the code manually at all, though it is possible to do this by mounting the code locally, which I am yet to test.
 
-I felt sure that a 1-d example must exist that contains multiple exact hits with local traps between. I asked Theo to try various options, which it did, but it kept suggesting some alternative that I felt was over-complicated. Eventually, I decided to just straight ask Theo to come up with the example I wanted: given a qubit driven with the three Pauli basis axes for some time, parameterised with u, v, w, T, where 3 are fixed and 1 variable, find an example like the one described . I thought this was a pretty challenging thing for it to comprehend, but actually it got it immediately and then proved mathematically that it did not exist \- pretty mind blowing for me. So I gave in and accepted its minimal divergence from my demand by having a 2 slot piecewise constant drive in one parameter. Here’s what it came up with.
+I felt sure that a 1-d example must exist that contains multiple exact hits with local traps between. I asked Theo to try various options, which it did, but it kept suggesting some alternative that I felt was over-complicated. Eventually, I decided to just straight ask Theo to come up with the example I wanted: given a qubit driven with the three Pauli basis axes, 
+i.e $H = u \sigma_x + v \sigma_y + w \sigma_z$ for some time $T$, parameterised by $u, v, w, T$, where 3 are fixed and 1 variable, find an example like the one described.
+I thought this was a pretty challenging thing for it to comprehend, but actually it got it immediately and then proved mathematically that it did not exist \- pretty mind blowing for me. So I gave in and accepted its minimal divergence from my demand by having a 2 slot piecewise constant drive in one parameter. Here’s what it came up with.
 
 ![Near full fidelity with local traps between](Example3_TwoSegment_Lambda_landscape.png)
 
