@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alexander Pitchford">
+<meta name="dcterms.date" content="2026-09-25">
+
+<title>First contact: Onboarding and Session 1 – Alexander Pitchford Github hosted material</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-782b4f575a1b2d18a4246672881c573b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Alexander Pitchford Github hosted material</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tmq_project.html"> 
+<span class="menu-text">Theo Meets QuTiP Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tmq_blog.html"> 
+<span class="menu-text">Theo Meets QuTiP Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Alexander Pitchford</span>
+    </span>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ajgpitch"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/alexander-pitchford-47237a35/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#first-contact-2nd-september-2026" id="toc-first-contact-2nd-september-2026" class="nav-link active" data-scroll-target="#first-contact-2nd-september-2026">First contact (2<sup>nd</sup> September 2026)</a>
+  <ul class="collapse">
+  <li><a href="#onboarding" id="toc-onboarding" class="nav-link" data-scroll-target="#onboarding"><strong>Onboarding</strong></a></li>
+  <li><a href="#session-1-quantum-control-landscapes" id="toc-session-1-quantum-control-landscapes" class="nav-link" data-scroll-target="#session-1-quantum-control-landscapes"><strong>Session #1 – Quantum Control Landscapes</strong></a></li>
+  </ul></li>
+  <li><a href="#breaking-news-30th-september-2026-version-1.0-released" id="toc-breaking-news-30th-september-2026-version-1.0-released" class="nav-link" data-scroll-target="#breaking-news-30th-september-2026-version-1.0-released">Breaking news (30<sup>th</sup> September 2026) – Version 1.0 released</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">First contact: Onboarding and Session 1</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">FirstPrinciples</div>
+    <div class="quarto-category">QuTiP</div>
+    <div class="quarto-category">Theo Platform</div>
+    <div class="quarto-category">Theo Discovery</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Alexander Pitchford </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 25, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="first-contact-2nd-september-2026" class="level1">
+<h1>First contact (2<sup>nd</sup> September 2026)</h1>
+<p>This week I was given access to the Theo Platform beta product (known as Collaborator for the beta), which is a web application driven through an AI chat interface. Along the way, one collects artifacts, such as code files. We’ll see this develop as we go.</p>
+<section id="onboarding" class="level2">
+<h2 class="anchored" data-anchor-id="onboarding"><strong>Onboarding</strong></h2>
+<p>After log in and password selection, there is some short onboarding process where Theo matches you with some online profile. I only had to give my name and institution and it found my existing research publications etc and made a very nice summary of my research work to date. The process was very quick and smooth. After this I was invited to start my first session.</p>
+</section>
+<section id="session-1-quantum-control-landscapes" class="level2">
+<h2 class="anchored" data-anchor-id="session-1-quantum-control-landscapes"><strong>Session #1 – Quantum Control Landscapes</strong></h2>
+<p>This idea is based on an undergraduate student project from 2024. The idea here is to repeat and extend the project, with permission of the Student, <a href="https://www.aber.ac.uk/en/maths/staff-profiles/listing/profile/wit12">William Townsend</a>, who is now a PhD candidate here at Aberystwyth. Will made good progress on his project, but we needed to go a little further in order to make a good publication. The plan is to see if Theo can find the same results, perhaps a little quicker, and extend into some new results.</p>
+<p>The basic premise of the project is that through gaining some mathematical understanding of the optimisation landscape for quantum control parameters, one might more efficiently locate local extrema and hence find potential global extrema more efficiently. The typical approach assumes a smooth manifold in a multi-dimensional space and uses gradient descent to find local minima starting from some random point in the space. The first local minimum encountered, may not be the global minimum. If not, then it is a <em>local trap</em>. My assumption is that due to the wave-like nature of quantum mechanics, then we should expect some periodicity in the manifold. So, if one finds one minimum then others might be expected at regular intervals is some dimension, whereas one travels along troughs in others.</p>
+<p>So, I explained the idea to Theo, being completely honest that I was making an evaluation, giving not much detail, just that we were going to investigate local traps and try to understand the landscape so as to avoid them. It’s been a while since I worked on this idea, so I asked Theo if it was still relevant. It went away and completed a literature search. We could have continued chatting, but I had a few other things to do. The review was completed in a few minutes and Theo made a nice summary, showing clearly that they understood the problem. I noted how much quicker this was than if I was working with a new student, who would have had to go away and read before we could make more progress. Most importantly, Theo declared that the idea still seemed relevant, mentioning some fairly recent work by well-known people. And so we moved on.</p>
+<p>I then mentioned that I was specifically interested in how it could use qutip in working on these problems. It promised to remember and at each step comment on how suitable and effective qutip would be for each task. The first of these was to consider a very simple 1-d system: a qubit driven at a constant rate by <span class="math inline">\sigma_y</span> with target of transitioning from the exited state |0&gt; to the superposition state |+&gt;. Note, this is exactly solvable and only of interest as an illustration, but it proved to be a good test of Theo’s Python coding and use of qutip.</p>
+<p>Specifically, I asked Theo to plot the fidelity the current state against |+&gt; over time. It made some useful suggestions regarding time range and resolution and I chose one of the options. True to their promise, Theo declared qutip would be useful in this task but they were unsure if it would be available in the environment, so it made a conditional import with fall back to NumPy if qutip is not available. Note, its fallback was based on the analytic solution, so this could get interesting when we look at problems that are not exactly solvable.</p>
+<p>So, we ran the code (server side) and found qutip not available in the environment, so a plot was produced from the NumPy exact solution code (see below). This seemed to be as expected, with the fidelity periodically reaching maximum (1). I then downloaded the code to my machine and ran it there. Initially there was some small error: some obscure method of finding the fidelity, which may have worked in old qutip versions. After a few back and forths, and an interesting discussion on whether the overlap value should be squared or not, we got to a working version and this did indeed produce the same output. I wonder whether Theo would have been able to fix this bug itself if it could have run the qutip version of the code itself?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="SigmaY_Qubit_Fidelity_vs_Time.png" class="img-fluid figure-img"></p>
+<figcaption>No traps, repeated full fidelity</figcaption>
+</figure>
+</div>
+<p>This example has no traps. Next we’re going to move on to a 1-d example that does have traps – in fact I’m going to ask Theo to suggest a way to modify the Hamiltonian so that it does. Then on to some 2-d examples. This was as far as Will got, extending to many dimensions is when it becomes interesting, as actual interesting science problems have a great many.</p>
+<p>I suggested that we could add a drift term in <span class="math inline">\sigma_z</span> and that this might result in suboptimal local maxima (traps). It extended the code and after some iterations we came up with the following plot. . <img src="Example1_SigmaY_sigmaZ_fixedT.png" class="img-fluid" alt="Local traps, asymptotically approaching full fidelity"></p>
+<p>Here we can clearly see that with the drift term applied <span class="math inline">w=1</span>, that the target state is never achieved (<span class="math inline">J=1</span>) but with increasing <span class="math inline">\sigma_y</span> amplitude <span class="math inline">u</span> we do approach it for some fixed evolution time, whereas with no drift the target is achieved periodically in <span class="math inline">u</span>.</p>
+<p>I checked with Will’s report and found we actually focussed on driving <span class="math inline">\sigma_x</span> with the <span class="math inline">\sigma_z</span> drift, so I asked Theo to construct the same example and we got this plot, which matches exactly what Will produced.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Example2_SigmaX_exact_hit.png" class="img-fluid figure-img"></p>
+<figcaption>One full fidelity, then local traps</figcaption>
+</figure>
+</div>
+<p>This example is interesting because it has an exact hit for some <span class="math inline">v</span>, the coefficient of <span class="math inline">\sigma_x</span>, but then local traps thereafter.</p>
+<p>We note that these plots are fairly tidy, but not quite publication quality, as the annotations and legends are oddly placed. This seems at odds with experiences of others with frontier AI models. At this stage, the beta version had only GPT 5.5 (although the default in 5.4 as it’s faster), GLM and Kimi. In recent days, Claude Sonnet and Opus have been added, they may have done a little better. I experimented (far from exhaustively) for some time with the other three and found GLM to be the most reliable at Python coding. It is clear that FP have plans for making the frontier models available in the Platform, but it is also well known that these cost a lot more to run, so somehow this will need to be paid for, but we would expect them to be the release version. The available models are doing amazing work and my focus is to trial this integrated environment. These plots are clearly good enough for our purpose here and they were produced with very little effort from me. I have not edited the code manually at all, though it is possible to do this by mounting the code locally, which I am yet to test.</p>
+<p>I felt sure that a 1-d example must exist that contains multiple exact hits with local traps between. I asked Theo to try various options, which it did, but it kept suggesting some alternative that I felt was over-complicated. Eventually, I decided to just straight ask Theo to come up with the example I wanted: given a qubit driven with the three Pauli basis axes, i.e <span class="math inline">H = u \sigma_x + v \sigma_y + w \sigma_z</span> for some time <span class="math inline">T</span>, parameterised by <span class="math inline">u, v, w, T</span>, where 3 are fixed and 1 variable, find an example like the one described. I thought this was a pretty challenging thing for it to comprehend, but actually it got it immediately and then proved mathematically that it did not exist - pretty mind blowing for me. So I gave in and accepted its minimal divergence from my demand by having a 2 slot piecewise constant drive in one parameter. Here’s what it came up with.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Example3_TwoSegment_Lambda_landscape.png" class="img-fluid figure-img"></p>
+<figcaption>Near full fidelity with local traps between</figcaption>
+</figure>
+</div>
+<p>It is not exactly what I had in mind, because really I wanted to see a dual periodicity, but it does show (at least very close to) multiple exact hits and a local trap.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click to see Python script that produces the 3 example plots
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>matplotlib.use(<span class="st">"Agg"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> io</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Theo (artifact capture)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> theo  <span class="co"># type: ignore</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    THEO_AVAILABLE <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">Exception</span>:</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    THEO_AVAILABLE <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Basic 2x2 analytic tools</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>I2 <span class="op">=</span> np.eye(<span class="dv">2</span>, dtype<span class="op">=</span><span class="bu">complex</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>sigmax <span class="op">=</span> np.array([[<span class="dv">0</span>, <span class="dv">1</span>], [<span class="dv">1</span>, <span class="dv">0</span>]], dtype<span class="op">=</span><span class="bu">complex</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>sigmay <span class="op">=</span> np.array([[<span class="dv">0</span>, <span class="op">-</span><span class="ot">1j</span>], [<span class="ot">1j</span>, <span class="dv">0</span>]], dtype<span class="op">=</span><span class="bu">complex</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>sigmaz <span class="op">=</span> np.array([[<span class="dv">1</span>, <span class="dv">0</span>], [<span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>]], dtype<span class="op">=</span><span class="bu">complex</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>psi0 <span class="op">=</span> np.array([<span class="fl">1.0</span> <span class="op">+</span> <span class="ot">0.0j</span>, <span class="fl">0.0</span> <span class="op">+</span> <span class="ot">0.0j</span>])</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>plus <span class="op">=</span> np.array([<span class="fl">1.0</span> <span class="op">+</span> <span class="ot">0.0j</span>, <span class="fl">1.0</span> <span class="op">+</span> <span class="ot">0.0j</span>], dtype<span class="op">=</span><span class="bu">complex</span>) <span class="op">/</span> np.sqrt(<span class="fl">2.0</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> exp_pauli_combo(a: <span class="bu">float</span>, b: <span class="bu">float</span>, c: <span class="bu">float</span>, t: <span class="bu">float</span>) <span class="op">-&gt;</span> np.ndarray:</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Analytic exp(-i (a*sx + b*sy + c*sz) t) for 2x2 Pauli combinations."""</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> <span class="bu">float</span>(a)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="bu">float</span>(b)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> <span class="bu">float</span>(c)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    t <span class="op">=</span> <span class="bu">float</span>(t)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> np.sqrt(a <span class="op">*</span> a <span class="op">+</span> b <span class="op">*</span> b <span class="op">+</span> c <span class="op">*</span> c)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> r <span class="op">&lt;</span> <span class="fl">1e-15</span> <span class="kw">or</span> <span class="bu">abs</span>(t) <span class="op">&lt;</span> <span class="fl">1e-15</span>:</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> I2.copy()</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    H <span class="op">=</span> a <span class="op">*</span> sigmax <span class="op">+</span> b <span class="op">*</span> sigmay <span class="op">+</span> c <span class="op">*</span> sigmaz</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.cos(r <span class="op">*</span> t) <span class="op">*</span> I2 <span class="op">-</span> <span class="ot">1j</span> <span class="op">*</span> np.sin(r <span class="op">*</span> t) <span class="op">*</span> (H <span class="op">/</span> r)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> J_from_U(U: np.ndarray) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    psi_final <span class="op">=</span> U <span class="op">@</span> psi0</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    inner <span class="op">=</span> np.vdot(plus, psi_final)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">float</span>(np.<span class="bu">abs</span>(inner))</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_J_scan(params: np.ndarray, U_builder):</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> np.asarray(params, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    J <span class="op">=</span> np.empty_like(params, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, x <span class="kw">in</span> <span class="bu">enumerate</span>(params):</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>        U <span class="op">=</span> U_builder(<span class="bu">float</span>(x))</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>        J[i] <span class="op">=</span> J_from_U(U)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> J</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> find_local_maxima(x_grid: np.ndarray, y_grid: np.ndarray):</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> np.asarray(x_grid, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> np.asarray(y_grid, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">len</span>(y)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">&lt;</span> <span class="dv">3</span>:</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> []</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    idx <span class="op">=</span> np.where((y[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>] <span class="op">&gt;</span> y[:<span class="op">-</span><span class="dv">2</span>]) <span class="op">&amp;</span> (y[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>] <span class="op">&gt;=</span> y[<span class="dv">2</span>:]))[<span class="dv">0</span>] <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [(<span class="bu">int</span>(i), <span class="bu">float</span>(x[i]), <span class="bu">float</span>(y[i])) <span class="cf">for</span> i <span class="kw">in</span> idx]</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> refine_peak_quadratic(x_grid: np.ndarray, y_grid: np.ndarray, idx: <span class="bu">int</span>):</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Quadratic interpolation using points idx-1, idx, idx+1."""</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> np.asarray(x_grid, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> np.asarray(y_grid, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">len</span>(x)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> idx <span class="op">&lt;=</span> <span class="dv">0</span> <span class="kw">or</span> idx <span class="op">&gt;=</span> n <span class="op">-</span> <span class="dv">1</span>:</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">float</span>(x[idx]), <span class="bu">float</span>(y[idx])</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    xs <span class="op">=</span> np.array([x[idx <span class="op">-</span> <span class="dv">1</span>], x[idx], x[idx <span class="op">+</span> <span class="dv">1</span>]], dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    ys <span class="op">=</span> np.array([y[idx <span class="op">-</span> <span class="dv">1</span>], y[idx], y[idx <span class="op">+</span> <span class="dv">1</span>]], dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>        a, b, c <span class="op">=</span> np.polyfit(xs, ys, <span class="dv">2</span>)</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">abs</span>(a) <span class="op">&lt;</span> <span class="fl">1e-18</span>:</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="bu">float</span>(x[idx]), <span class="bu">float</span>(y[idx])</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>        x_peak <span class="op">=</span> <span class="op">-</span>b <span class="op">/</span> (<span class="fl">2.0</span> <span class="op">*</span> a)</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>        y_peak <span class="op">=</span> a <span class="op">*</span> x_peak <span class="op">*</span> x_peak <span class="op">+</span> b <span class="op">*</span> x_peak <span class="op">+</span> c</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">float</span>(x_peak), <span class="bu">float</span>(y_peak)</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span>:</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">float</span>(x[idx]), <span class="bu">float</span>(y[idx])</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> top_peaks(refined_peaks, k<span class="op">=</span><span class="dv">3</span>, min_separation<span class="op">=</span><span class="fl">1e-6</span>):</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Pick top peaks by height with simple dedup by x proximity."""</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>    candidates <span class="op">=</span> <span class="bu">sorted</span>(refined_peaks, key<span class="op">=</span><span class="kw">lambda</span> t: t[<span class="dv">1</span>], reverse<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>    chosen <span class="op">=</span> []</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> xp, yp <span class="kw">in</span> candidates:</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">all</span>(<span class="bu">abs</span>(xp <span class="op">-</span> xc) <span class="op">&gt;</span> min_separation <span class="cf">for</span> xc, _ <span class="kw">in</span> chosen):</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>            chosen.append((xp, yp))</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(chosen) <span class="op">&gt;=</span> k:</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> chosen</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters for the three examples</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>T1 <span class="op">=</span> <span class="fl">2.0</span>  <span class="co"># Example 1 time (fixed)</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>T2 <span class="op">=</span> np.pi <span class="op">/</span> (<span class="fl">2.0</span> <span class="op">*</span> np.sqrt(<span class="fl">2.0</span>) <span class="op">*</span> d)  <span class="co"># Example 2 time (fixed)</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>TAU1 <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>TAU2 <span class="op">=</span> <span class="fl">2.0</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 1: H = u*sigma_y + w*sigma_z, fixed T = 2</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>u_grid <span class="op">=</span> np.linspace(<span class="fl">0.0</span>, <span class="fl">10.0</span>, <span class="dv">4000</span>)</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> U_example1(u: <span class="bu">float</span>, w: <span class="bu">float</span>) <span class="op">-&gt;</span> np.ndarray:</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Hamiltonian coefficients: (0, u, w)</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> exp_pauli_combo(<span class="fl">0.0</span>, u, w, T1)</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>J_u_w1 <span class="op">=</span> compute_J_scan(u_grid, <span class="kw">lambda</span> u: U_example1(u, <span class="fl">1.0</span>))</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>J_u_w0 <span class="op">=</span> compute_J_scan(u_grid, <span class="kw">lambda</span> u: U_example1(u, <span class="fl">0.0</span>))</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="co"># Leading maxima for w=1 curve</span></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>maxima_u_w1 <span class="op">=</span> find_local_maxima(u_grid, J_u_w1)</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>refined_u_w1 <span class="op">=</span> []</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> idx, _, _ <span class="kw">in</span> maxima_u_w1:</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>    xp, yp <span class="op">=</span> refine_peak_quadratic(u_grid, J_u_w1, idx)</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>    refined_u_w1.append((xp, yp))</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>near1_threshold_u <span class="op">=</span> <span class="fl">0.995</span></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>u_near1 <span class="op">=</span> [(xp, yp) <span class="cf">for</span> xp, yp <span class="kw">in</span> refined_u_w1 <span class="cf">if</span> yp <span class="op">&gt;=</span> near1_threshold_u]</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>leading_u_w1 <span class="op">=</span> top_peaks(refined_u_w1, k<span class="op">=</span><span class="dv">3</span>, min_separation<span class="op">=</span><span class="fl">0.08</span>)</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 2: H = d*sigma_z + v*sigma_x, fixed T_x</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>v_grid <span class="op">=</span> np.linspace(<span class="fl">0.0</span>, <span class="fl">10.0</span>, <span class="dv">3000</span>)</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> U_example2(v: <span class="bu">float</span>) <span class="op">-&gt;</span> np.ndarray:</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Hamiltonian coefficients: (v, 0, d)</span></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> exp_pauli_combo(v, <span class="fl">0.0</span>, d, T2)</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>J_v <span class="op">=</span> compute_J_scan(v_grid, U_example2)</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>v_hit <span class="op">=</span> d</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>J_hit <span class="op">=</span> J_from_U(U_example2(v_hit))</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="co"># Also find local maxima to show trend</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>maxima_v <span class="op">=</span> find_local_maxima(v_grid, J_v)</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>refined_v <span class="op">=</span> []</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> idx, _, _ <span class="kw">in</span> maxima_v:</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>    xp, yp <span class="op">=</span> refine_peak_quadratic(v_grid, J_v, idx)</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>    refined_v.append((xp, yp))</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>leading_v <span class="op">=</span> top_peaks(refined_v <span class="op">+</span> [(v_hit, J_hit)], k<span class="op">=</span><span class="dv">3</span>, min_separation<span class="op">=</span><span class="fl">0.08</span>)</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 3: two-segment one-parameter model</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="co"># U(lambda)=exp[-i(d*sigma_z+lambda*sigma_x)*tau2] exp[-i(d*sigma_z+lambda*sigma_y)*tau1]</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>lam_grid <span class="op">=</span> np.linspace(<span class="fl">0.0</span>, <span class="fl">15.0</span>, <span class="dv">4500</span>)</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> U_example3(lam: <span class="bu">float</span>) <span class="op">-&gt;</span> np.ndarray:</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Segment 1: (0, lam, d) for tau1</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>    U1 <span class="op">=</span> exp_pauli_combo(<span class="fl">0.0</span>, lam, d, TAU1)</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Segment 2: (lam, 0, d) for tau2</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>    U2 <span class="op">=</span> exp_pauli_combo(lam, <span class="fl">0.0</span>, d, TAU2)</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> U2 <span class="op">@</span> U1</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>J_lam <span class="op">=</span> compute_J_scan(lam_grid, U_example3)</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>maxima_lam <span class="op">=</span> find_local_maxima(lam_grid, J_lam)</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>refined_lam <span class="op">=</span> []</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> idx, _, _ <span class="kw">in</span> maxima_lam:</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>    xp, yp <span class="op">=</span> refine_peak_quadratic(lam_grid, J_lam, idx)</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>    refined_lam.append((xp, yp))</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>near1_threshold <span class="op">=</span> <span class="fl">0.999</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>near1_lam <span class="op">=</span> [(xp, yp) <span class="cf">for</span> xp, yp <span class="kw">in</span> refined_lam <span class="cf">if</span> yp <span class="op">&gt;=</span> near1_threshold]</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>leading_lam <span class="op">=</span> top_peaks(refined_lam, k<span class="op">=</span><span class="dv">5</span>, min_separation<span class="op">=</span><span class="fl">0.08</span>)</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="co"># For plotting: leading near-1 peaks (prefer the earliest if tied)</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>near1_lam_sorted <span class="op">=</span> <span class="bu">sorted</span>(near1_lam, key<span class="op">=</span><span class="kw">lambda</span> t: t[<span class="dv">0</span>])</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>near1_to_mark <span class="op">=</span> near1_lam_sorted[:<span class="dv">4</span>]</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">len</span>(near1_to_mark) <span class="op">&lt;</span> <span class="dv">2</span>:</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>    near1_to_mark <span class="op">=</span> top_peaks(refined_lam, k<span class="op">=</span><span class="dv">3</span>, min_separation<span class="op">=</span><span class="fl">0.08</span>)</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot style (preserve presentation choices)</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>plt.rcParams.update({</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>    <span class="st">"font.size"</span>: <span class="dv">10</span>,</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>    <span class="st">"axes.titlesize"</span>: <span class="dv">12</span>,</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>    <span class="st">"axes.labelsize"</span>: <span class="dv">10</span>,</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    <span class="st">"legend.fontsize"</span>: <span class="dv">9</span>,</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>    <span class="st">"axes.grid"</span>: <span class="va">True</span>,</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>    <span class="st">"grid.alpha"</span>: <span class="fl">0.25</span>,</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>    <span class="st">"mathtext.fontset"</span>: <span class="st">"dejavusans"</span>,</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> save_figure_svgpng(fig, name_base: <span class="bu">str</span>):</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Save SVG only in Theo; save both SVG+PNG locally (PNG local-only)."""</span></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>    svg_buf <span class="op">=</span> io.StringIO()</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>    fig.savefig(svg_buf, <span class="bu">format</span><span class="op">=</span><span class="st">"svg"</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>    svg_text <span class="op">=</span> svg_buf.getvalue()</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> THEO_AVAILABLE:</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>        theo.save_artifact(name_base <span class="op">+</span> <span class="st">".svg"</span>, svg_text)</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>        fig.savefig(name_base <span class="op">+</span> <span class="st">".svg"</span>, <span class="bu">format</span><span class="op">=</span><span class="st">"svg"</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>        fig.savefig(name_base <span class="op">+</span> <span class="st">".png"</span>, <span class="bu">format</span><span class="op">=</span><span class="st">"png"</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>, dpi<span class="op">=</span><span class="dv">300</span>)</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _bboxes_intersect(bb1, bb2, margin_px<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">not</span> (</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>        bb1.x1 <span class="op">+</span> margin_px <span class="op">&lt;</span> bb2.x0</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>        <span class="kw">or</span> bb1.x0 <span class="op">-</span> margin_px <span class="op">&gt;</span> bb2.x1</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>        <span class="kw">or</span> bb1.y1 <span class="op">+</span> margin_px <span class="op">&lt;</span> bb2.y0</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>        <span class="kw">or</span> bb1.y0 <span class="op">-</span> margin_px <span class="op">&gt;</span> bb2.y1</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> place_legend_no_overlap(</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>    ax,</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>    fig,</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>    avoid_artists,</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>    loc_candidates<span class="op">=</span>(<span class="st">"lower right"</span>, <span class="st">"upper right"</span>, <span class="st">"upper left"</span>, <span class="st">"lower left"</span>),</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>    framealpha<span class="op">=</span><span class="fl">0.9</span>,</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>):</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>    handles, labels <span class="op">=</span> ax.get_legend_handles_labels()</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> handles:</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>    fig.canvas.draw()</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>    renderer <span class="op">=</span> fig.canvas.get_renderer()</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>    avoid_bbs <span class="op">=</span> []</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> art <span class="kw">in</span> avoid_artists:</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> art <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>            bb <span class="op">=</span> art.get_window_extent(renderer<span class="op">=</span>renderer)</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>            avoid_bbs.append(bb)</span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> <span class="pp">Exception</span>:</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>            <span class="cf">pass</span></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>    best <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> loc <span class="kw">in</span> loc_candidates:</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>        leg <span class="op">=</span> ax.legend(loc<span class="op">=</span>loc, framealpha<span class="op">=</span>framealpha)</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>        fig.canvas.draw()</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>        leg_bb <span class="op">=</span> leg.get_window_extent(renderer<span class="op">=</span>renderer)</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>        overlaps <span class="op">=</span> <span class="bu">any</span>(_bboxes_intersect(leg_bb, bb, margin_px<span class="op">=</span><span class="dv">4</span>) <span class="cf">for</span> bb <span class="kw">in</span> avoid_bbs)</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> overlaps:</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>            best <span class="op">=</span> leg</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>        leg.remove()</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> best <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>        best <span class="op">=</span> ax.legend(loc<span class="op">=</span>loc_candidates[<span class="dv">0</span>], framealpha<span class="op">=</span>framealpha)</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> best</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> annotate_peak(</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>    ax,</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>    xp,</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>    yp,</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>    text,</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>    i,</span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>    high_peak_threshold<span class="op">=</span><span class="fl">0.97</span>,</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="fl">8.5</span>,</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>    bbox_pad<span class="op">=</span><span class="fl">0.22</span>,</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>):</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Stagger offsets to avoid annotation stacking and to steer labels away from high peaks.</span></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Use different offsets per label index, with sign flipped for near-top peaks.</span></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>    offset_sets <span class="op">=</span> [</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>        (<span class="dv">14</span>, <span class="dv">18</span>),  <span class="co"># upper-right</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>        (<span class="dv">14</span>, <span class="op">-</span><span class="dv">28</span>),  <span class="co"># lower-right</span></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>        (<span class="op">-</span><span class="dv">90</span>, <span class="dv">18</span>),  <span class="co"># upper-left</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>        (<span class="op">-</span><span class="dv">90</span>, <span class="op">-</span><span class="dv">28</span>),  <span class="co"># lower-left</span></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>        (<span class="dv">40</span>, <span class="dv">18</span>),  <span class="co"># far-right</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>        (<span class="dv">40</span>, <span class="op">-</span><span class="dv">28</span>),  <span class="co"># far-right low</span></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>    dx, dy <span class="op">=</span> offset_sets[i <span class="op">%</span> <span class="bu">len</span>(offset_sets)]</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> yp <span class="op">&gt;=</span> high_peak_threshold:</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>        <span class="co"># If peak is near the top, prefer to place text below.</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>        dy <span class="op">=</span> <span class="op">-</span><span class="bu">abs</span>(dy)</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>    ann <span class="op">=</span> ax.annotate(</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>        text,</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>        xy<span class="op">=</span>(xp, yp),</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>        xytext<span class="op">=</span>(dx, dy),</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>        textcoords<span class="op">=</span><span class="st">"offset points"</span>,</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>        ha<span class="op">=</span><span class="st">"left"</span>,</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>        va<span class="op">=</span><span class="st">"bottom"</span> <span class="cf">if</span> dy <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">"top"</span>,</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>        fontsize<span class="op">=</span>fontsize,</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>        bbox<span class="op">=</span><span class="bu">dict</span>(boxstyle<span class="op">=</span><span class="st">"round,pad=</span><span class="sc">%.2f</span><span class="st">"</span> <span class="op">%</span> bbox_pad, fc<span class="op">=</span><span class="st">"white"</span>, ec<span class="op">=</span><span class="st">"0.6"</span>, alpha<span class="op">=</span><span class="fl">0.9</span>),</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>        zorder<span class="op">=</span><span class="dv">6</span>,</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ann</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> style_axes(fig, ax, top_margin<span class="op">=</span><span class="fl">0.80</span>):</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Presentation-only spacing: avoid constrained_layout; reserve title space.</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>    fig.subplots_adjust(left<span class="op">=</span><span class="fl">0.12</span>, right<span class="op">=</span><span class="fl">0.98</span>, bottom<span class="op">=</span><span class="fl">0.14</span>, top<span class="op">=</span>top_margin)</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>    ax.grid(<span class="va">True</span>)</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 1 figure (separate)</span></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>fig1, ax1 <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="fl">6.2</span>, <span class="fl">4.8</span>), constrained_layout<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>style_axes(fig1, ax1, top_margin<span class="op">=</span><span class="fl">0.83</span>)</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>ax1.plot(u_grid, J_u_w1, lw<span class="op">=</span><span class="fl">2.2</span>, color<span class="op">=</span><span class="st">"C0"</span>, label<span class="op">=</span><span class="vs">r'</span><span class="dv">$</span><span class="vs">w=1</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>ax1.plot(u_grid, J_u_w0, lw<span class="op">=</span><span class="fl">1.7</span>, color<span class="op">=</span><span class="st">"C0"</span>, ls<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.85</span>, label<span class="op">=</span><span class="vs">r'</span><span class="dv">$</span><span class="vs">w=0</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">"Example 1: constant-H drift"</span>, pad<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="vs">r'</span><span class="dv">$</span><span class="vs">u</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="vs">r'</span><span class="dv">$</span><span class="vs">J = </span><span class="cf">|</span><span class="er">\</span><span class="vs">langle </span><span class="op">+</span><span class="cf">|</span><span class="er">\</span><span class="vs">psi</span><span class="kw">(</span><span class="vs">T</span><span class="kw">)</span><span class="ch">\r</span><span class="vs">angle</span><span class="cf">|</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>ax1.set_xlim(<span class="fl">0.0</span>, <span class="fl">10.0</span>)</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>ax1.set_ylim(<span class="fl">0.0</span>, <span class="fl">1.05</span>)</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>avoid_for_legend <span class="op">=</span> []</span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>peak_texts <span class="op">=</span> []</span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, (xp, yp) <span class="kw">in</span> <span class="bu">enumerate</span>(leading_u_w1, start<span class="op">=</span><span class="dv">1</span>):</span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>    ax1.plot([xp], [yp], marker<span class="op">=</span><span class="st">"*"</span>, ms<span class="op">=</span><span class="dv">11</span>, color<span class="op">=</span><span class="st">"crimson"</span>, zorder<span class="op">=</span><span class="dv">6</span>)</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>    ann <span class="op">=</span> annotate_peak(</span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>        ax1,</span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>        xp,</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>        yp,</span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>        <span class="ss">f"peak </span><span class="ch">{{</span><span class="sc">{</span>i<span class="sc">}</span><span class="ch">}}\n</span><span class="ss">u</span><span class="ch">\u2248{{</span><span class="sc">{</span>xp<span class="sc">:.3f}</span><span class="ch">}}\n</span><span class="ss">J</span><span class="ch">\u2248{{</span><span class="sc">{</span>yp<span class="sc">:.3f}</span><span class="ch">}}</span><span class="ss">"</span>,</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>        i<span class="op">=</span>i <span class="op">-</span> <span class="dv">1</span>,</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>        high_peak_threshold<span class="op">=</span><span class="fl">0.98</span>,</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>        fontsize<span class="op">=</span><span class="fl">8.2</span>,</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>        bbox_pad<span class="op">=</span><span class="fl">0.20</span>,</span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>    peak_texts.append(ann)</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>    avoid_for_legend.append(ann)</span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>near1_text <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">len</span>(u_near1) <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>    ax1.axhline(near1_threshold_u, color<span class="op">=</span><span class="st">"gray"</span>, lw<span class="op">=</span><span class="fl">1.0</span>, ls<span class="op">=</span><span class="st">":"</span>, alpha<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Move the label away from the title region.</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>    near1_text <span class="op">=</span> ax1.text(</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0.02</span>,</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0.14</span>,</span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>        <span class="st">"w=1 near-1"</span>,</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a>        transform<span class="op">=</span>ax1.transAxes,</span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>        fontsize<span class="op">=</span><span class="dv">9</span>,</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>        ha<span class="op">=</span><span class="st">"left"</span>,</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>        va<span class="op">=</span><span class="st">"bottom"</span>,</span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>        bbox<span class="op">=</span><span class="bu">dict</span>(boxstyle<span class="op">=</span><span class="st">"round,pad=0.15"</span>, fc<span class="op">=</span><span class="st">"white"</span>, ec<span class="op">=</span><span class="st">"0.6"</span>, alpha<span class="op">=</span><span class="fl">0.9</span>),</span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>        zorder<span class="op">=</span><span class="dv">7</span>,</span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>    avoid_for_legend.append(near1_text)</span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>info1 <span class="op">=</span> <span class="ss">f"d=</span><span class="sc">{</span>d<span class="sc">:g}</span><span class="ss">, T=</span><span class="sc">{</span>T1<span class="sc">:g}</span><span class="ss">"</span></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>info_text1 <span class="op">=</span> ax1.text(</span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>    <span class="fl">0.02</span>,</span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>    <span class="fl">0.02</span>,</span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>    info1,</span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>    transform<span class="op">=</span>ax1.transAxes,</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>    ha<span class="op">=</span><span class="st">"left"</span>,</span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>    va<span class="op">=</span><span class="st">"bottom"</span>,</span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="dv">9</span>,</span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>    bbox<span class="op">=</span><span class="bu">dict</span>(boxstyle<span class="op">=</span><span class="st">"round,pad=0.2"</span>, fc<span class="op">=</span><span class="st">"white"</span>, ec<span class="op">=</span><span class="st">"0.65"</span>, alpha<span class="op">=</span><span class="fl">0.92</span>),</span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a>    zorder<span class="op">=</span><span class="dv">7</span>,</span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a>avoid_for_legend.append(info_text1)</span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="co"># Legend placement that avoids annotations.</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>place_legend_no_overlap(</span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a>    ax1,</span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>    fig1,</span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>    avoid_artists<span class="op">=</span>avoid_for_legend,</span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>    loc_candidates<span class="op">=</span>(<span class="st">"lower right"</span>, <span class="st">"upper right"</span>, <span class="st">"upper left"</span>, <span class="st">"lower left"</span>),</span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a>    framealpha<span class="op">=</span><span class="fl">0.9</span>,</span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>base1 <span class="op">=</span> <span class="st">"Example1_SigmaY_sigmaZ_fixedT"</span></span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a>save_figure_svgpng(fig1, base1)</span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>plt.close(fig1)</span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 2 figure (separate)</span></span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>fig2, ax2 <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="fl">6.2</span>, <span class="fl">4.8</span>), constrained_layout<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a>style_axes(fig2, ax2, top_margin<span class="op">=</span><span class="fl">0.83</span>)</span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a>ax2.plot(v_grid, J_v, lw<span class="op">=</span><span class="fl">2.0</span>, color<span class="op">=</span><span class="st">"C1"</span>, label<span class="op">=</span><span class="vs">r'</span><span class="dv">$</span><span class="vs">J</span><span class="kw">(</span><span class="vs">v</span><span class="kw">)</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">"Example 2: constant-H (</span><span class="ch">\u03c3</span><span class="st">x)"</span>, pad<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="vs">r'</span><span class="dv">$</span><span class="vs">v</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="vs">r'</span><span class="dv">$</span><span class="vs">J = </span><span class="cf">|</span><span class="er">\</span><span class="vs">langle </span><span class="op">+</span><span class="cf">|</span><span class="er">\</span><span class="vs">psi</span><span class="kw">(</span><span class="vs">T_x</span><span class="kw">)</span><span class="ch">\r</span><span class="vs">angle</span><span class="cf">|</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>ax2.set_xlim(<span class="fl">0.0</span>, <span class="fl">10.0</span>)</span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>ax2.set_ylim(<span class="fl">0.0</span>, <span class="fl">1.05</span>)</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a>avoid_for_legend <span class="op">=</span> []</span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a>ax2.plot([v_hit], [J_hit], marker<span class="op">=</span><span class="st">"s"</span>, ms<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">"black"</span>, zorder<span class="op">=</span><span class="dv">6</span>)</span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="co"># Reposition exact-hit annotation to avoid crowding near title/curve peak.</span></span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a>dy <span class="op">=</span> <span class="op">-</span><span class="dv">28</span> <span class="cf">if</span> J_hit <span class="op">&gt;=</span> <span class="fl">0.97</span> <span class="cf">else</span> <span class="dv">16</span></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a>exact_ann <span class="op">=</span> ax2.annotate(</span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"Exact hit</span><span class="ch">\n</span><span class="ss">v=d=</span><span class="sc">{</span>v_hit<span class="sc">:g}</span><span class="ch">\n</span><span class="ss">J</span><span class="ch">\u2248</span><span class="sc">{</span>J_hit<span class="sc">:.6f}</span><span class="ss">"</span>,</span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a>    xy<span class="op">=</span>(v_hit, J_hit),</span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a>    xytext<span class="op">=</span>(<span class="dv">12</span>, dy),</span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a>    textcoords<span class="op">=</span><span class="st">"offset points"</span>,</span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a>    ha<span class="op">=</span><span class="st">"left"</span>,</span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>    va<span class="op">=</span><span class="st">"top"</span> <span class="cf">if</span> dy <span class="op">&lt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">"bottom"</span>,</span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="dv">9</span>,</span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>    bbox<span class="op">=</span><span class="bu">dict</span>(boxstyle<span class="op">=</span><span class="st">"round,pad=0.2"</span>, fc<span class="op">=</span><span class="st">"white"</span>, ec<span class="op">=</span><span class="st">"0.6"</span>, alpha<span class="op">=</span><span class="fl">0.9</span>),</span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a>    zorder<span class="op">=</span><span class="dv">7</span>,</span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a>avoid_for_legend.append(exact_ann)</span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a>marked <span class="op">=</span> []</span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> j, (xp, yp) <span class="kw">in</span> <span class="bu">enumerate</span>(leading_v):</span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">abs</span>(xp <span class="op">-</span> v_hit) <span class="op">&lt;</span> <span class="fl">1e-6</span>:</span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">any</span>(<span class="bu">abs</span>(xp <span class="op">-</span> m) <span class="op">&lt;</span> <span class="fl">1e-3</span> <span class="cf">for</span> m <span class="kw">in</span> marked):</span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>    marked.append(xp)</span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a>    ax2.plot([xp], [yp], marker<span class="op">=</span><span class="st">"*"</span>, ms<span class="op">=</span><span class="dv">9</span>, color<span class="op">=</span><span class="st">"darkorange"</span>, zorder<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>    ann <span class="op">=</span> annotate_peak(</span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>        ax2,</span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>        xp,</span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>        yp,</span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>        <span class="ss">f"peak</span><span class="ch">\n</span><span class="ss">v</span><span class="ch">\u2248{{</span><span class="sc">{</span>xp<span class="sc">:.3f}</span><span class="ch">}}\n</span><span class="ss">J</span><span class="ch">\u2248{{</span><span class="sc">{</span>yp<span class="sc">:.3f}</span><span class="ch">}}</span><span class="ss">"</span>,</span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a>        i<span class="op">=</span>(j <span class="op">+</span> <span class="dv">1</span>) <span class="op">%</span> <span class="dv">4</span>,</span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>        high_peak_threshold<span class="op">=</span><span class="fl">0.98</span>,</span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a>        fontsize<span class="op">=</span><span class="fl">8.3</span>,</span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a>        bbox_pad<span class="op">=</span><span class="fl">0.20</span>,</span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a>    avoid_for_legend.append(ann)</span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a>info2 <span class="op">=</span> <span class="ss">f"d=</span><span class="sc">{</span>d<span class="sc">:g}</span><span class="ss">, Tx=</span><span class="sc">{</span>T2<span class="sc">:.6f}</span><span class="ss">"</span></span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a>info_text2 <span class="op">=</span> ax2.text(</span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a>    <span class="fl">0.02</span>,</span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a>    <span class="fl">0.02</span>,</span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a>    info2,</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>    transform<span class="op">=</span>ax2.transAxes,</span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a>    ha<span class="op">=</span><span class="st">"left"</span>,</span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>    va<span class="op">=</span><span class="st">"bottom"</span>,</span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="dv">9</span>,</span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a>    bbox<span class="op">=</span><span class="bu">dict</span>(boxstyle<span class="op">=</span><span class="st">"round,pad=0.2"</span>, fc<span class="op">=</span><span class="st">"white"</span>, ec<span class="op">=</span><span class="st">"0.65"</span>, alpha<span class="op">=</span><span class="fl">0.92</span>),</span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>    zorder<span class="op">=</span><span class="dv">7</span>,</span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a>avoid_for_legend.append(info_text2)</span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>place_legend_no_overlap(</span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a>    ax2,</span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a>    fig2,</span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a>    avoid_artists<span class="op">=</span>avoid_for_legend,</span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a>    loc_candidates<span class="op">=</span>(<span class="st">"lower right"</span>, <span class="st">"upper right"</span>, <span class="st">"upper left"</span>, <span class="st">"lower left"</span>),</span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a>    framealpha<span class="op">=</span><span class="fl">0.9</span>,</span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a>base2 <span class="op">=</span> <span class="st">"Example2_SigmaX_exact_hit"</span></span>
+<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a>save_figure_svgpng(fig2, base2)</span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>plt.close(fig2)</span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 3 figure (separate)</span></span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a>fig3, ax3 <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="fl">6.2</span>, <span class="fl">4.8</span>), constrained_layout<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a>style_axes(fig3, ax3, top_margin<span class="op">=</span><span class="fl">0.83</span>)</span>
+<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a>ax3.plot(lam_grid, J_lam, lw<span class="op">=</span><span class="fl">2.0</span>, color<span class="op">=</span><span class="st">"C2"</span>, label<span class="op">=</span><span class="vs">r'</span><span class="dv">$</span><span class="vs">J</span><span class="kw">(</span><span class="er">\</span><span class="vs">lambda</span><span class="kw">)</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">"Example 3: two-segment </span><span class="ch">\u03bb</span><span class="st"> model"</span>, pad<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a>ax3.set_xlabel(<span class="vs">r'</span><span class="dv">$</span><span class="er">\</span><span class="vs">lambda</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a>ax3.set_ylabel(<span class="vs">r'</span><span class="dv">$</span><span class="vs">J = </span><span class="cf">|</span><span class="er">\</span><span class="vs">langle </span><span class="op">+</span><span class="cf">|</span><span class="er">\</span><span class="vs">psi_{{</span><span class="dv">\m</span><span class="vs">athrm{{final}}}}</span><span class="kw">(</span><span class="er">\</span><span class="vs">lambda</span><span class="kw">)</span><span class="ch">\r</span><span class="vs">angle</span><span class="cf">|</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a>ax3.set_xlim(<span class="fl">0.0</span>, <span class="fl">15.0</span>)</span>
+<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>ax3.set_ylim(<span class="fl">0.0</span>, <span class="fl">1.05</span>)</span>
+<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a>ax3.axhline(near1_threshold, color<span class="op">=</span><span class="st">"gray"</span>, lw<span class="op">=</span><span class="fl">1.0</span>, ls<span class="op">=</span><span class="st">":"</span>, alpha<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a>avoid_for_legend <span class="op">=</span> []</span>
+<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, (xp, yp) <span class="kw">in</span> <span class="bu">enumerate</span>(near1_to_mark, start<span class="op">=</span><span class="dv">1</span>):</span>
+<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a>    ax3.plot([xp], [yp], marker<span class="op">=</span><span class="st">"*"</span>, ms<span class="op">=</span><span class="dv">12</span>, color<span class="op">=</span><span class="st">"crimson"</span>, zorder<span class="op">=</span><span class="dv">6</span>)</span>
+<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Use distinct offsets per label so they don't stack.</span></span>
+<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a>    ann <span class="op">=</span> annotate_peak(</span>
+<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a>        ax3,</span>
+<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a>        xp,</span>
+<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a>        yp,</span>
+<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a>        <span class="ss">f"near-1 peak </span><span class="ch">{{</span><span class="sc">{</span>i<span class="sc">}</span><span class="ch">}}\n\u03bb\u2248{{</span><span class="sc">{</span>xp<span class="sc">:.3f}</span><span class="ch">}}\n</span><span class="ss">J</span><span class="ch">\u2248{{</span><span class="sc">{</span>yp<span class="sc">:.6f}</span><span class="ch">}}</span><span class="ss">"</span>,</span>
+<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a>        i<span class="op">=</span>(i <span class="op">-</span> <span class="dv">1</span>),</span>
+<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a>        high_peak_threshold<span class="op">=</span><span class="fl">0.995</span>,</span>
+<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a>        fontsize<span class="op">=</span><span class="fl">8.5</span>,</span>
+<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a>        bbox_pad<span class="op">=</span><span class="fl">0.22</span>,</span>
+<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a>    avoid_for_legend.append(ann)</span>
+<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a>info3 <span class="op">=</span> <span class="ss">f"d=</span><span class="sc">{</span>d<span class="sc">:g}</span><span class="ss">, tau1=</span><span class="sc">{</span>TAU1<span class="sc">:g}</span><span class="ss">, tau2=</span><span class="sc">{</span>TAU2<span class="sc">:g}</span><span class="ss">"</span></span>
+<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a>info_text3 <span class="op">=</span> ax3.text(</span>
+<span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a>    <span class="fl">0.02</span>,</span>
+<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a>    <span class="fl">0.02</span>,</span>
+<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a>    info3,</span>
+<span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a>    transform<span class="op">=</span>ax3.transAxes,</span>
+<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a>    ha<span class="op">=</span><span class="st">"left"</span>,</span>
+<span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a>    va<span class="op">=</span><span class="st">"bottom"</span>,</span>
+<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="dv">9</span>,</span>
+<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a>    bbox<span class="op">=</span><span class="bu">dict</span>(boxstyle<span class="op">=</span><span class="st">"round,pad=0.2"</span>, fc<span class="op">=</span><span class="st">"white"</span>, ec<span class="op">=</span><span class="st">"0.65"</span>, alpha<span class="op">=</span><span class="fl">0.92</span>),</span>
+<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a>    zorder<span class="op">=</span><span class="dv">7</span>,</span>
+<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a>avoid_for_legend.append(info_text3)</span>
+<span id="cb1-513"><a href="#cb1-513" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a>place_legend_no_overlap(</span>
+<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a>    ax3,</span>
+<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a>    fig3,</span>
+<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a>    avoid_artists<span class="op">=</span>avoid_for_legend,</span>
+<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a>    loc_candidates<span class="op">=</span>(<span class="st">"lower right"</span>, <span class="st">"upper right"</span>, <span class="st">"upper left"</span>, <span class="st">"lower left"</span>),</span>
+<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a>    framealpha<span class="op">=</span><span class="fl">0.9</span>,</span>
+<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-521"><a href="#cb1-521" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a>base3 <span class="op">=</span> <span class="st">"Example3_TwoSegment_Lambda_landscape"</span></span>
+<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a>save_figure_svgpng(fig3, base3)</span>
+<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a>plt.close(fig3)</span>
+<span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a><span class="co"># Print compact textual summary</span></span>
+<span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------------------</span></span>
+<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"=== Three-Example Summary ==="</span>)</span>
+<span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> leading_u_w1:</span>
+<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(</span>
+<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Example 1 (w=1) leading maxima:"</span>,</span>
+<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a>        <span class="st">", "</span>.join(</span>
+<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a>            [</span>
+<span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a>                <span class="ss">f"u</span><span class="ch">\u2248</span><span class="sc">{</span>x<span class="sc">:.3f}</span><span class="ss"> (J</span><span class="ch">\u2248</span><span class="sc">{</span>y<span class="sc">:.3f}</span><span class="ss">)"</span></span>
+<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> x, y <span class="kw">in</span> leading_u_w1</span>
+<span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a>            ]</span>
+<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a>        <span class="st">"; w=0 comparison curve overlaid on same axes."</span>,</span>
+<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Example 1 (w=1): no local maxima found on grid; w=0 curve included for comparison."</span>)</span>
+<span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Example 2 exact hit: v=d=</span><span class="sc">{</span>v_hit<span class="sc">:g}</span><span class="ss"> gives J</span><span class="ch">\u2248</span><span class="sc">{</span>J_hit<span class="sc">:.6f}</span><span class="ss">"</span>)</span>
+<span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> near1_lam_sorted:</span>
+<span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a>    show <span class="op">=</span> near1_lam_sorted[:<span class="dv">4</span>]</span>
+<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(</span>
+<span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Example 3 leading near-1 peaks (J&gt;=</span><span class="sc">%.3f</span><span class="st">):"</span> <span class="op">%</span> near1_threshold,</span>
+<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a>        <span class="st">", "</span>.join([<span class="ss">f"</span><span class="ch">\u03bb\u2248</span><span class="sc">{</span>x<span class="sc">:.3f}</span><span class="ss"> (J</span><span class="ch">\u2248</span><span class="sc">{</span>y<span class="sc">:.6f}</span><span class="ss">)"</span> <span class="cf">for</span> x, y <span class="kw">in</span> show]),</span>
+<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a>    show <span class="op">=</span> leading_lam[:<span class="dv">3</span>]</span>
+<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(</span>
+<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Example 3: no peaks above J&gt;=</span><span class="sc">%.3f</span><span class="st"> found on grid; top peaks:"</span> <span class="op">%</span> near1_threshold,</span>
+<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a>        <span class="st">", "</span>.join([<span class="ss">f"</span><span class="ch">\u03bb\u2248</span><span class="sc">{</span>x<span class="sc">:.3f}</span><span class="ss"> (J</span><span class="ch">\u2248</span><span class="sc">{</span>y<span class="sc">:.6f}</span><span class="ss">)"</span> <span class="cf">for</span> x, y <span class="kw">in</span> show]),</span>
+<span id="cb1-559"><a href="#cb1-559" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<p>I thought that what we have achieved is already fairly interesting, so thought it would be useful to produce some structured notes, including all the maths clearly laid out. I asked Theo to do this and it did produce some TeX code, but it wasn’t really what I was expecting, which was something more like an artifact I could work on interactively. I know that Theo can do this from my experiences working with Randy Davila using Theo Discovery (fka Theo Conjecture), so I thought I would watch the <a href="https://drive.google.com/file/d/1zMbXe3I8JpHLentXPBYNkVlKPiPMczqy/view?usp=drive_link">Theo Collaborator Webinar</a>. This was extremely helpful and discovered how to create other artifacts (than code). I felt a little foolish for not having done this previously.</p>
+<p>So what I wanted was a Dynamic Research Object (DRO) but to get there we need to create a few other artifacts. Firstly, going back to Problem Identification, I tried a Council of GLM, Kimi and Claude. All three were able to recognise the gap in the literature and proposed sensible ways forward. Some differences: Kimi most concise, Claude most impressive sounding and a detailed plan of how to achieve the objective. On reflection, it seems my usage so far was not incorrect, because all the Agents referred to the work we had done so far when proposing research questions. I will next ask Claude to help formalise the Research Question.</p>
+<p>I am now quite excited about the potential research outcome of this project, as this is something I have believed has potential for a very long time, but not really had the time and resources to pursue. The encouragement from Theo, with confirming a clear gap in the literature and suggesting the research path that I had planned but with added granularity in the steps, spurs me on. The fact that I have an excellent mathematician at my side is also very encouraging.</p>
+</section>
+</section>
+<section id="breaking-news-30th-september-2026-version-1.0-released" class="level1">
+<h1>Breaking news (30<sup>th</sup> September 2026) – Version 1.0 released</h1>
+<p>The first full version of the Theo Platform was released late (for me) yesterday. Expect another post very soon describing what has changed.</p>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "First contact: Onboarding and Session 1"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Alexander Pitchford"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2026-09-25"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> article</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [FirstPrinciples, QuTiP, Theo Platform, Theo Discovery]</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="an">code-tools:</span><span class="co"> true</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="an">filters:</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - include-code-files</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu"># First contact (2^nd^ September 2026)</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>This week I was given access to the Theo Platform beta product (known as Collaborator for the beta), </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>which is a web application driven through an AI chat interface. Along the way, one collects artifacts, such as code files. We’ll see this develop as we go.</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Onboarding**</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>After log in and password selection, there is some short onboarding process where Theo matches you with some online profile. I only had to give my name and institution and it found my existing research publications etc and made a very nice summary of my research work to date. The process was very quick and smooth. After this I was invited to start my first session.</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Session \#1 – Quantum Control Landscapes**</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>This idea is based on an undergraduate student project from 2024<span class="sc">\.</span> The idea here is to repeat and extend the project, with permission of the Student, <span class="co">[</span><span class="ot">William Townsend</span><span class="co">](https://www.aber.ac.uk/en/maths/staff-profiles/listing/profile/wit12)</span>, who is now a PhD candidate here at Aberystwyth. Will made good progress on his project, but we needed to go a little further in order to make a good publication. The plan is to see if Theo can find the same results, perhaps a little quicker, and extend into some new results.</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>The basic premise of the project is that through gaining some mathematical understanding of the optimisation landscape for quantum control parameters, one might more efficiently locate local extrema and hence find potential global extrema more efficiently. The typical approach assumes a smooth manifold in a multi-dimensional space and uses gradient descent to find local minima starting from some random point in the space. The first local minimum encountered, may not be the global minimum. If not, then it is a *local trap*. My assumption is that due to the wave-like nature of quantum mechanics, then we should expect some periodicity in the manifold. So, if one finds one minimum then others might be expected at regular intervals is some dimension, whereas one travels along troughs in others.</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>So, I explained the idea to Theo, being completely honest that I was making an evaluation, giving not much detail, just that we were going to investigate local traps and try to understand the landscape so as to avoid them. It’s been a while since I worked on this idea, so I asked Theo if it was still relevant. It went away and completed a literature search. We could have continued chatting, but I had a few other things to do. The review was completed in a few minutes and Theo made a nice summary, showing clearly that they understood the problem. I noted how much quicker this was than if I was working with a new student, who would have had to go away and read before we could make more progress. Most importantly, Theo declared that the idea still seemed relevant, mentioning some fairly recent work by well-known people. And so we moved on.</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>I then mentioned that I was specifically interested in how it could use qutip in working on these problems. It promised to remember and at each step comment on how suitable and effective qutip would be for each task. The first of these was to consider a very simple 1-d system: a qubit driven at a constant rate by $\sigma_y$ with target of transitioning from the exited state |0<span class="sc">\&gt;</span> to the superposition state |+<span class="sc">\&gt;</span>. Note, this is exactly solvable and only of interest as an illustration, but it proved to be a good test of Theo’s Python coding and use of qutip. </span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>Specifically, I asked Theo to plot the fidelity the current state against |+<span class="sc">\&gt;</span> over time. It made some useful suggestions regarding time range and resolution and I chose one of the options. True to their promise, Theo declared qutip would be useful in this task but they were unsure if it would be available in the environment, so it made a conditional import with fall back to NumPy if qutip is not available. Note, its fallback was based on the analytic solution, so this could get interesting when we look at problems that are not exactly solvable. </span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>So, we ran the code (server side) and found qutip not available in the environment, so a plot was produced from the NumPy exact solution code (see below). This seemed to be as expected, with the fidelity periodically reaching maximum (1). I then downloaded the code to my machine and ran it there. Initially there was some small error: some obscure method of finding the fidelity, which may have worked in old qutip versions. After a few back and forths, and an interesting discussion on whether the overlap value should be squared or not, we got to a working version and this did indeed produce the same output. I wonder whether Theo would have been able to fix this bug itself if it could have run the qutip version of the code itself?</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="al">![No traps, repeated full fidelity](SigmaY_Qubit_Fidelity_vs_Time.png)</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>This example has no traps. Next we’re going to move on to a 1-d example that does have traps – in fact I’m going to ask Theo to suggest a way to modify the Hamiltonian so that it does. Then on to some 2-d examples. This was as far as Will got, extending to many dimensions is when it becomes interesting, as actual interesting science problems have a great many.</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>I suggested that we could add a drift term in $\sigma_z$ and that this might result in suboptimal local maxima (traps). </span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>It extended the code and after some iterations we came up with the following plot. </span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>.</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="al">![Local traps, asymptotically approaching full fidelity](Example1_SigmaY_sigmaZ_fixedT.png)</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>Here we can clearly see that with the drift term applied $w=1$, that the target state is never achieved ($J=1$) but with increasing $\sigma_y$ amplitude $u$ we do approach it for some fixed evolution time, whereas with no drift the target is achieved periodically in $u$.</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>I checked with Will’s report and found we actually focussed on driving $\sigma_x$ with the $\sigma_z$ drift, so I asked Theo to construct the same example and we got this plot, which matches exactly what Will produced.</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="al">![One full fidelity, then local traps](Example2_SigmaX_exact_hit.png)</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>This example is interesting because it has an exact hit for some $v$, the coefficient of $\sigma_x$, but then local traps thereafter.</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>We note that these plots are fairly tidy, but not quite publication quality, as the annotations and legends are oddly placed. This seems at odds with experiences of others with frontier AI models. At this stage, the beta version had only GPT 5.5 (although the default in 5.4 as it’s faster), GLM and Kimi. In recent days, Claude Sonnet and Opus have been added, they may have done a little better. I experimented (far from exhaustively) for some time with the other three and found GLM to be the most reliable at Python coding. It is clear that FP have plans for making the frontier models available in the Platform, but it is also well known that these cost a lot more to run, so somehow this will need to be paid for, but we would expect them to be the release version. The available models are doing amazing work and my focus is to trial this integrated environment. These plots are clearly good enough for our purpose here and they were produced with very little effort from me. I have not edited the code manually at all, though it is possible to do this by mounting the code locally, which I am yet to test.</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>I felt sure that a 1-d example must exist that contains multiple exact hits with local traps between. I asked Theo to try various options, which it did, but it kept suggesting some alternative that I felt was over-complicated. Eventually, I decided to just straight ask Theo to come up with the example I wanted: given a qubit driven with the three Pauli basis axes, </span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>i.e $H = u \sigma_x + v \sigma_y + w \sigma_z$ for some time $T$, parameterised by $u, v, w, T$, where 3 are fixed and 1 variable, find an example like the one described.</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>I thought this was a pretty challenging thing for it to comprehend, but actually it got it immediately and then proved mathematically that it did not exist <span class="sc">\-</span> pretty mind blowing for me. So I gave in and accepted its minimal divergence from my demand by having a 2 slot piecewise constant drive in one parameter. Here’s what it came up with.</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="al">![Near full fidelity with local traps between](Example3_TwoSegment_Lambda_landscape.png)</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>It is not exactly what I had in mind, because really I wanted to see a dual periodicity, but it does show (at least very close to) multiple exact hits and a local trap.</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse="true"}</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="fu">### Click to see Python script that produces the 3 example plots</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="in">```{.python include="qubit_ctrl_land_1d-v38.py"}</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>I thought that what we have achieved is already fairly interesting, so thought it would be useful to produce some structured notes, including all the maths clearly laid out. I asked Theo to do this and it did produce some TeX code, but it wasn’t really what I was expecting, which was something more like an artifact I could work on interactively. I know that Theo can do this from my experiences working with Randy Davila using Theo Discovery (fka Theo Conjecture), so I thought I would watch the <span class="co">[</span><span class="ot">Theo Collaborator Webinar</span><span class="co">](https://drive.google.com/file/d/1zMbXe3I8JpHLentXPBYNkVlKPiPMczqy/view?usp=drive_link)</span>. This was extremely helpful and discovered how to create other artifacts (than code). I felt a little foolish for not having done this previously.</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>So what I wanted was a Dynamic Research Object (DRO) but to get there we need to create a few other artifacts. Firstly, going back to Problem Identification, I tried a Council of GLM, Kimi and Claude. All three were able to recognise the gap in the literature and proposed sensible ways forward. Some differences: Kimi most concise, Claude most impressive sounding and a detailed plan of how to achieve the objective. On reflection, it seems my usage so far was not incorrect, because all the Agents referred to the work we had done so far when proposing research questions. I will next ask Claude to help formalise the Research Question.</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>I am now quite excited about the potential research outcome of this project, as this is something I have believed has potential for a very long time, but not really had the time and resources to pursue. The encouragement from Theo, with confirming a clear gap in the literature and suggesting the research path that I had planned but with added granularity in the steps, spurs me on. The fact that I have an excellent mathematician at my side is also very encouraging.</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="fu"># Breaking news (30^th^ September 2026) -- Version 1.0 released</span></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>The first full version of the Theo Platform was released late (for me) yesterday.</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>Expect another post very soon describing what has changed.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
