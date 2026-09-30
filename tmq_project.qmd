@@ -1,0 +1,24 @@
+---
+title: "Theo Meets QuTiP"
+page-layout: article
+---
+
+# Project Aims
+
+I am evaluating how the Theo Platform (fka Theo Collaborator) can help researchers advance their work more deeply and efficiently in fields such as quantum information and fundamental quantum theory.  Specifically, I am helping [FirstPrinciples](https://firstprinciples.com/) to understand how to integrate [QuTiP](https://qutip.org/) libraries into the platform such that it can more effectively help researchers. I am starting by evaluating how it handles numerical problems in quantum dynamics by asking Theo for help in answering some research questions that people would typically use QuTiP for. 
+
+# Disclaimer
+
+The work is funded by FirstPrinciples through my employer, [Aberystwyth University](http://www.aber.ac.uk). 
+I am a maintainer of the [QuTiP](https://qutip.org/) project and my objective is to help our userbase continue to do great science, 
+hopefully greater and faster than ever with help from these new tools.
+
+# Notes
+
+I will use “QuTiP” to mean the organisation and family of code libraries and qutip to mean the core QuTiP library.
+
+# Blog
+
+I will update on progress under the Theo Meets QuTiP blog.
+
+
