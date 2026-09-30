@@ -5,7 +5,7 @@ page-layout: article
 
 # Project Aims
 
-I am evaluating how the Theo Platform can help researchers advance their work more deeply and efficiently in fields such as quantum information and fundamental quantum theory.  Specifically, I am helping [FirstPrinciples](https://firstprinciples.com/) to understand how to integrate [QuTiP](https://qutip.org/) libraries into the platform such that it can more effectively help researchers. I am starting by evaluating how it handles numerical problems in quantum dynamics by asking Theo for help in answering some research questions that people would typically use QuTiP for. 
+I am evaluating how the Theo Platform (fka Theo Collaborator) can help researchers advance their work more deeply and efficiently in fields such as quantum information and fundamental quantum theory.  Specifically, I am helping [FirstPrinciples](https://firstprinciples.com/) to understand how to integrate [QuTiP](https://qutip.org/) libraries into the platform such that it can more effectively help researchers. I am starting by evaluating how it handles numerical problems in quantum dynamics by asking Theo for help in answering some research questions that people would typically use QuTiP for. 
 
 # Disclaimer
 
