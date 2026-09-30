@@ -71,7 +71,7 @@ So what I wanted was a Dynamic Research Object (DRO) but to get there we need to
 
 I am now quite excited about the potential research outcome of this project, as this is something I have believed has potential for a very long time, but not really had the time and resources to pursue. The encouragement from Theo, with confirming a clear gap in the literature and suggesting the research path that I had planned but with added granularity in the steps, spurs me on. The fact that I have an excellent mathematician at my side is also very encouraging.
 
-# Breaking news (30^th^ September 2026) -- Version 1.0 released
+# Breaking news (30^th^ September 2026) -- Version 1.0 released.
 
 The first full version of the Theo Platform was released late (for me) yesterday.
 Expect another post very soon describing what has changed.
